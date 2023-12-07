@@ -12,8 +12,8 @@ const Login = (props) => {
           <div className="login-container-title teleport-show">
             <div className="login-sub-container-title">
               <img
-                alt={props.image_alt2}
-                src={props.image_src2}
+                alt={props.imageAlt2}
+                src={props.imageSrc2}
                 className="login-image-title"
               />
             </div>
@@ -32,13 +32,13 @@ const Login = (props) => {
               <div id="inputMail" className="login-sub-container-mail">
                 <div className="login-container-input-email input">
                   <img
-                    alt={props.image_alt3}
-                    src={props.envelopeInputEmail_image}
+                    alt={props.imageAlt3}
+                    src={props.envelopeInputEmailImage}
                     className="login-envelope-image-input"
                   />
                   <input
                     type="text"
-                    placeholder={props.EmailInput}
+                    placeholder={props.emailInput}
                     autoComplete="off"
                     className="login-input-email"
                   />
@@ -47,8 +47,8 @@ const Login = (props) => {
               <div className="login-sub-container-password">
                 <div className="login-container-input-password input">
                   <img
-                    alt={props.image_alt4}
-                    src={props.image_src4}
+                    alt={props.imageAlt4}
+                    src={props.imageSrc4}
                     className="login-image-lock-password"
                   />
                   <input
@@ -59,15 +59,15 @@ const Login = (props) => {
                   />
                   <img
                     id="showPasswordBtn"
-                    alt={props.showPasswors_image}
-                    src={props.image_src5}
+                    alt={props.showPassworsImage}
+                    src={props.imageSrc5}
                     className="login-image-show-password"
                   />
                 </div>
               </div>
               <div className="login-container-forgot-password-link">
                 <a
-                  href={props.ForgotPassword_input}
+                  href={props.forgotPasswordInput}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="login-link"
@@ -76,7 +76,7 @@ const Login = (props) => {
                 </a>
               </div>
               <button type="submit" className="login-button button">
-                {props.LoginButton}
+                {props.loginButton}
               </button>
             </form>
           </div>
@@ -96,15 +96,15 @@ const Login = (props) => {
         <div className="login-container-footer">
           <button type="submit" className="login-google-button button">
             <img
-              alt={props.image_alt1}
-              src={props.image_src1}
+              alt={props.imageAlt1}
+              src={props.imageSrc1}
               className="login-image-google-logo"
             />
           </button>
           <div className="login-container-register">
             <span className="login-question-register">{props.text}</span>
             <a
-              href={props.link_text}
+              href={props.linkText}
               target="_blank"
               rel="noreferrer noopener"
               className="login-register-link"
@@ -115,8 +115,8 @@ const Login = (props) => {
         </div>
       </div>
       <img
-        alt={props.image_alt}
-        src={props.image_src}
+        alt={props.imageAlt}
+        src={props.imageSrc}
         className="login-nurse-image"
       />
     </main>
@@ -124,49 +124,49 @@ const Login = (props) => {
 }
 
 Login.defaultProps = {
-  showPasswors_image: 'image',
-  envelopeInputEmail_image: '/envelopeicon.svg',
-  EmailInput: 'Correo eléctronico',
-  ForgotPassword_input: 'https://example.com',
-  image_src: '/d00910a2f58ebd9be8b4590c673efe1c-1500h.png',
-  image_src4: '/lcokicon.svg',
-  LoginButton: 'Iniciar Sesión',
-  image_alt4: 'image',
-  image_alt3: 'image',
-  image_alt1: 'image',
-  image_src5: '/eyeicon.svg',
-  link_text: 'https://example.com',
-  image_src2: '/turnoxpresstitle.svg',
-  image_src1: '/google_ic.svg',
+  showPassworsImage: 'image',
+  envelopeInputEmailImage: '/envelopeicon.svg',
+  emailInput: 'Correo eléctronico',
+  forgotPasswordInput: 'https://example.com',
+  imageSrc: '/d00910a2f58ebd9be8b4590c673efe1c-1500h.png',
+  imageSrc4: '/lcokicon.svg',
+  loginButton: 'Iniciar Sesión',
+  imageAlt4: 'image',
+  imageAlt3: 'image',
+  imageAlt1: 'image',
+  imageSrc5: '/eyeicon.svg',
+  linkText: 'https://example.com',
+  imageSrc2: '/turnoxpresstitle.svg',
+  imageSrc1: '/google_ic.svg',
   text1: 'Registrarse',
   heading: '¡Hola nuevamente! 👋🏻',
   text: '¿No tienes cuenta? \n',
   text2: '¿Olvidaste tu contraseña?',
-  image_alt: 'image',
-  image_alt2: 'image',
+  imageAlt: 'image',
+  imageAlt2: 'image',
 }
 
 Login.propTypes = {
-  showPasswors_image: PropTypes.string,
-  envelopeInputEmail_image: PropTypes.string,
-  EmailInput: PropTypes.string,
-  ForgotPassword_input: PropTypes.string,
-  image_src: PropTypes.string,
-  image_src4: PropTypes.string,
-  LoginButton: PropTypes.string,
-  image_alt4: PropTypes.string,
-  image_alt3: PropTypes.string,
-  image_alt1: PropTypes.string,
-  image_src5: PropTypes.string,
-  link_text: PropTypes.string,
-  image_src2: PropTypes.string,
-  image_src1: PropTypes.string,
+  showPassworsImage: PropTypes.string,
+  envelopeInputEmailImage: PropTypes.string,
+  emailInput: PropTypes.string,
+  forgotPasswordInput: PropTypes.string,
+  imageSrc: PropTypes.string,
+  imageSrc4: PropTypes.string,
+  loginButton: PropTypes.string,
+  imageAlt4: PropTypes.string,
+  imageAlt3: PropTypes.string,
+  imageAlt1: PropTypes.string,
+  imageSrc5: PropTypes.string,
+  linkText: PropTypes.string,
+  imageSrc2: PropTypes.string,
+  imageSrc1: PropTypes.string,
   text1: PropTypes.string,
   heading: PropTypes.string,
   text: PropTypes.string,
   text2: PropTypes.string,
-  image_alt: PropTypes.string,
-  image_alt2: PropTypes.string,
+  imageAlt: PropTypes.string,
+  imageAlt2: PropTypes.string,
 }
 
 export default Login

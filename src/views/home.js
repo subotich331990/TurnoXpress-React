@@ -12,7 +12,7 @@ const Home = (props) => {
         <title>TurnoXpress</title>
         <meta property="og:title" content="TurnoXpress" />
       </Helmet>
-      <Login image_alt="NurseImage" image_alt2="LogoName"></Login>
+      <Login imageAlt="NurseImage" imageAlt2="LogoName"></Login>
     </div>
   )
 }

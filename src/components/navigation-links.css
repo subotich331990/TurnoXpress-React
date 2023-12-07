@@ -58,20 +58,33 @@
 
 
 
+.navigation-links-root-class-name8 {
+  margin-right: 100%;
+}
 .navigation-links-root-class-name10 {
   margin-right: 100%;
 }
 @media(max-width: 1366px) {
+  .navigation-links-root-class-name8 {
+    margin-right: 100%;
+  }
   .navigation-links-root-class-name10 {
     margin-right: 100%;
   }
 }
 @media(max-width: 1280px) {
+  .navigation-links-root-class-name8 {
+    margin-right: 100%;
+  }
   .navigation-links-root-class-name10 {
     margin-right: 100%;
   }
 }
 @media(max-width: 800px) {
+  .navigation-links-root-class-name8 {
+    display: none;
+    margin-right: 100%;
+  }
   .navigation-links-root-class-name10 {
     display: none;
     margin-right: 100%;
@@ -96,6 +109,9 @@
   .navigation-links-text3 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-root-class-name8 {
+    display: none;
   }
   .navigation-links-root-class-name10 {
     display: none;
