@@ -1,0 +1,103 @@
+.navigation-links-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-text {
+  font-size: 16px;
+  font-style: normal;
+  transition: 0.3s;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.navigation-links-text:active {
+  color: #2a60ff;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.navigation-links-text1 {
+  transition: 0.3s;
+  font-family: "Poppins";
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links-text1:active {
+  color: #2a60ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.navigation-links-text2 {
+  transition: 0.3s;
+  font-family: "Poppins";
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links-text2:active {
+  color: #2a60ff;
+  text-decoration: underline;
+}
+.navigation-links-text3 {
+  transition: 0.3s;
+  font-family: "Poppins";
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links-text3:active {
+  color: #2a60ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.navigation-links-root-class-name10 {
+  margin-right: 100%;
+}
+@media(max-width: 1366px) {
+  .navigation-links-root-class-name10 {
+    margin-right: 100%;
+  }
+}
+@media(max-width: 1280px) {
+  .navigation-links-root-class-name10 {
+    margin-right: 100%;
+  }
+}
+@media(max-width: 800px) {
+  .navigation-links-root-class-name10 {
+    display: none;
+    margin-right: 100%;
+  }
+}
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text2 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text3 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-root-class-name10 {
+    display: none;
+  }
+}
