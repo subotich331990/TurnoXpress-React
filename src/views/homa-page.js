@@ -26,55 +26,6 @@ const HomaPage = (props) => {
                 <path d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"></path>
               </svg>
             </div>
-            <ul
-              data-thq="thq-dropdown-list"
-              className="homa-page-dropdown-list"
-            >
-              <li
-                data-thq="thq-dropdown"
-                className="homa-page-dropdown list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="homa-page-dropdown-toggle1"
-                >
-                  <span className="homa-page-text">Turno</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                className="homa-page-dropdown1 list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="homa-page-dropdown-toggle2"
-                >
-                  <span className="homa-page-text01">Especialidad</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                className="homa-page-dropdown2 list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="homa-page-dropdown-toggle3"
-                >
-                  <span className="homa-page-text02">Agenda</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                className="homa-page-dropdown3 list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="homa-page-dropdown-toggle4"
-                >
-                  <span className="homa-page-text03">Factura</span>
-                </div>
-              </li>
-            </ul>
           </div>
           <img
             id="isoLogo"
@@ -135,7 +86,7 @@ const HomaPage = (props) => {
                 </span>
                 <span className="homa-page-text08">cita médica</span>
                 <span>
-                   desde la
+                  desde la
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',

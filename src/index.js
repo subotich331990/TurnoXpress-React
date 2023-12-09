@@ -18,7 +18,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route component={Turnos} exact path="/turnos" />
-        <Route component={HomaPage} exact path="/homa-page" />
+        <Route component={HomaPage} exact path="/home-page" />
         <Route component={Home} exact path="/" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />

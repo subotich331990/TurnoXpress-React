@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import { TurnosServices } from "../services/turnoService";
+import NavigationLinks from '../components/navigation-links';
+import './turnos.css';
+const TurnosGet = new TurnosServices()
 
-import { Helmet } from 'react-helmet'
 
-import NavigationLinks from '../components/navigation-links'
-import './turnos.css'
+const Turnos = () => {
 
-const Turnos = (props) => {
+  const [turnos, setTurnos] = useState([]);
+
+  useEffect(() => {
+
+    TurnosGet.getAllTurnos()
+      .then(response => {
+        setTurnos(response.data);
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }, []);
+
   return (
     <div className="turnos-container">
       <Helmet>
@@ -26,49 +42,6 @@ const Turnos = (props) => {
                 <path d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"></path>
               </svg>
             </div>
-            <ul data-thq="thq-dropdown-list" className="turnos-dropdown-list">
-              <li data-thq="thq-dropdown" className="turnos-dropdown list-item">
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="turnos-dropdown-toggle1"
-                >
-                  <span className="turnos-text">Turno</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                className="turnos-dropdown1 list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="turnos-dropdown-toggle2"
-                >
-                  <span className="turnos-text01">Especialidad</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                className="turnos-dropdown2 list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="turnos-dropdown-toggle3"
-                >
-                  <span className="turnos-text02">Agenda</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                className="turnos-dropdown3 list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="turnos-dropdown-toggle4"
-                >
-                  <span className="turnos-text03">Factura</span>
-                </div>
-              </li>
-            </ul>
           </div>
           <img
             id="isoLogo"
@@ -98,32 +71,48 @@ const Turnos = (props) => {
       <div className="turnos-container-main">
         <div className="turnos-container5">
           <div id="container-turnos" className="turnos-container-blur">
-            <div className="turnos-container-turnos">
-              <div className="turnos-container-fecha">
-                <span className="turnos-text04">
-                  <span>Lunes 11/12/2023 14:30</span>
-                  <br></br>
-                </span>
-              </div>
-              <div className="turnos-container-especialidad">
-                <span className="turnos-text07">Otorrinolaringología</span>
-              </div>
-              <div className="turnos-container-doctor">
-                <span className="turnos-text08">
-                  <span>Dra. Cecilia Mendez</span>
-                  <br></br>
-                </span>
-              </div>
-              <div className="turnos-container-button">
-                <div className="turnos-button-modificar"></div>
-                <div className="turnos-button-cancelar"></div>
-              </div>
-            </div>
+            {
+
+              turnos.map(turnos => {
+                return (
+                  < div className="turnos-container-turnos" key={turnos.id} >
+                    <div className="turnos-container-fecha">
+                      <span className="turnos-text04">
+                        <span>{turnos.fecha_turno}</span>
+                        <br></br>
+                      </span>
+                    </div>
+                    <div className="turnos-container-especialidad">
+                      <span className="turnos-text07">{turnos.especialidad}</span>
+                    </div>
+                    <div className="turnos-container-doctor">
+                      <span className="turnos-text08">
+                        <span>{turnos.nombre_doctor}</span>
+                        <br></br>
+                      </span>
+                    </div>
+                    <div className="turnos-container-button">
+                      <div className="turnos-button-modificar">
+                        <button>Modificar</button>
+                      </div>
+                      <div className="turnos-button-cancelar"></div>
+                    </div>
+                  </div >
+                
+                )
+              })
+            }
           </div>
         </div>
+
       </div>
     </div>
   )
 }
 
+
+
 export default Turnos
+
+
+
