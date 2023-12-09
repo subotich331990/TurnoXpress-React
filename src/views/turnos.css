@@ -345,19 +345,17 @@
 .turnos-button-modificar {
   flex: 0 0 auto;
   width: 50%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 .turnos-button-cancelar {
   flex: 0 0 auto;
   width: 50%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 @media(max-width: 1366px) {

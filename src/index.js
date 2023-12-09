@@ -12,6 +12,8 @@ import Turnos from './views/turnos'
 import HomaPage from './views/homa-page'
 import Home from './views/home'
 import NotFound from './views/not-found'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 const App = () => {
   return (

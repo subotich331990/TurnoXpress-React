@@ -11,6 +11,7 @@ const Home = (props) => {
       <Helmet>
         <title>TurnoXpress</title>
         <meta property="og:title" content="TurnoXpress" />
+        
       </Helmet>
       <Login imageAlt="NurseImage" imageAlt2="LogoName"></Login>
     </div>
