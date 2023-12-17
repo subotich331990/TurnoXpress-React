@@ -19,8 +19,8 @@ const HomePageComponent = (props) => {
               className="home-page-component-image"
             />
             <img
-              src={props.image_src3}
               alt={props.image_alt5}
+              src={props.image_src3}
               className="home-page-component-image1"
             />
             <div
@@ -115,52 +115,52 @@ const HomePageComponent = (props) => {
 
 HomePageComponent.defaultProps = {
   image_src: 'd89e01b9-5227-4627-b3ff-a585f869ba9b',
-  image_alt: 'image',
-  image_alt1: 'image',
   image_src1: '78595439-b8c1-445a-a851-911248a02589',
+  image_alt5: 'image',
+  image_alt4: 'image',
+  image_alt2: 'image',
+  image_alt3: 'image',
+  image_src3: '/logo.svg',
+  ForgotPassword_input: 'https://example.com',
+  showPasswors_image: 'image',
   text: '¿No tienes cuenta? \n',
   link_text: 'https://example.com',
-  text1: 'Registrarse',
-  image_src2: '53ca4ebc-735c-40d7-b210-d0bff7d52cc9',
-  image_alt2: 'image',
-  heading: '¡Hola nuevamente!',
   LoginButton: 'Iniciar Sesión',
-  ForgotPassword_input: 'https://example.com',
-  text2: '¿Olvidaste tu contraseña?',
+  heading: '¡Hola nuevamente!',
   envelopeInputEmail_image: '571d3ff3-ff1a-496c-9367-0c19662edcd2',
-  image_alt3: 'image',
-  EmailInput: 'Correo eléctronico',
-  image_src4: 'f4750f47-3949-4ea4-bb4b-585d71b641ba',
-  image_alt4: 'image',
-  showPasswors_image: 'image',
+  image_alt1: 'image',
   image_src5: '7e151f72-65df-487b-8850-6d61e61e9044',
-  image_src3: '/logo.svg',
-  image_alt5: 'image',
+  EmailInput: 'Correo eléctronico',
+  image_src2: '53ca4ebc-735c-40d7-b210-d0bff7d52cc9',
+  image_alt: 'image',
+  text2: '¿Olvidaste tu contraseña?',
+  image_src4: 'f4750f47-3949-4ea4-bb4b-585d71b641ba',
+  text1: 'Registrarse',
 }
 
 HomePageComponent.propTypes = {
   image_src: PropTypes.string,
-  image_alt: PropTypes.string,
-  image_alt1: PropTypes.string,
   image_src1: PropTypes.string,
+  image_alt5: PropTypes.string,
+  image_alt4: PropTypes.string,
+  image_alt2: PropTypes.string,
+  image_alt3: PropTypes.string,
+  image_src3: PropTypes.string,
+  ForgotPassword_input: PropTypes.string,
+  showPasswors_image: PropTypes.string,
   text: PropTypes.string,
   link_text: PropTypes.string,
-  text1: PropTypes.string,
-  image_src2: PropTypes.string,
-  image_alt2: PropTypes.string,
-  heading: PropTypes.string,
   LoginButton: PropTypes.string,
-  ForgotPassword_input: PropTypes.string,
-  text2: PropTypes.string,
+  heading: PropTypes.string,
   envelopeInputEmail_image: PropTypes.string,
-  image_alt3: PropTypes.string,
-  EmailInput: PropTypes.string,
-  image_src4: PropTypes.string,
-  image_alt4: PropTypes.string,
-  showPasswors_image: PropTypes.string,
+  image_alt1: PropTypes.string,
   image_src5: PropTypes.string,
-  image_src3: PropTypes.string,
-  image_alt5: PropTypes.string,
+  EmailInput: PropTypes.string,
+  image_src2: PropTypes.string,
+  image_alt: PropTypes.string,
+  text2: PropTypes.string,
+  image_src4: PropTypes.string,
+  text1: PropTypes.string,
 }
 
 export default HomePageComponent
