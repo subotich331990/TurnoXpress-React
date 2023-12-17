@@ -8,20 +8,16 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
-import Turnos from './views/turnos'
-import HomaPage from './views/homa-page'
-import Home from './views/home'
+import LoginPage from './views/login-page'
+import HomePage from './views/home-page'
 import NotFound from './views/not-found'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={Turnos} exact path="/turnos" />
-        <Route component={HomaPage} exact path="/home-page" />
-        <Route component={Home} exact path="/" />
+        <Route component={LoginPage} exact path="/" />
+        <Route component={HomePage} exact path="/home-page" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
