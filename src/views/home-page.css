@@ -3,7 +3,173 @@
   display: flex;
   overflow: auto;
   min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.home-page-main-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  min-height: 100vh;
   align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home-page-header-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.home-page-body-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 80vh;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("/doctorabackground-1500h.png");
+}
+.home-page-left-container {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-page-sub-left-container {
+  flex: 0 0 auto;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-page-title-home-page {
+  color: #1E1E1E;
+  font-size: 60px;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 800;
+  line-height: 158%;
+  letter-spacing: 1px;
+}
+.home-page-down-message-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.home-page-down-message-home-page {
+  font-size: 22px;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 158%;
+}
+.home-page-text1 {
+  color: #2a60ff;
+}
+.home-page-button-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 55px;
+  align-items: flex-start;
+}
+.home-page-button {
+  gap: 16px;
+  color: #fcfbfb;
+  width: 421px;
+  display: flex;
+  padding: 16px 40px;
+  font-style: normal;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 158%;
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  letter-spacing: 0.16px;
+  justify-content: center;
+  background-color: rgb(42, 96, 255);
+}
+.home-page-footer-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+@media(max-width: 1366px) {
+  .home-page-header-container {
+    height: 80px;
+  }
+  .home-page-body-container {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .home-page-sub-left-container {
+    width: 90%;
+    align-self: flex-end;
+  }
+}
+@media(max-width: 1280px) {
+  .home-page-body-container {
+    align-self: flex-start;
+    max-height: 80vh;
+    min-height: 80vh;
+  }
+  .home-page-title-home-page {
+    font-size: 50px;
+  }
+  .home-page-down-message-home-page {
+    font-size: 20px;
+  }
+  .home-page-button {
+    color: rgb(252, 251, 251);
+    width: 70%;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 158%;
+    letter-spacing: 0.16px;
+    background-color: rgb(42, 96, 255);
+  }
+}
+@media(max-width: 430px) {
+  .home-page-body-container {
+    background-position: center;
+  }
+  .home-page-left-container {
+    width: 100%;
+    align-items: center;
+  }
+  .home-page-sub-left-container {
+    width: 100%;
+    align-items: center;
+  }
+  .home-page-title-home-page {
+    font-size: 30px;
+  }
+  .home-page-down-message-container {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .home-page-down-message-home-page {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .home-page-button-container {
+    justify-content: center;
+  }
 }
