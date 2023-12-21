@@ -31,19 +31,11 @@
 }
 
 .container-input-email-root-class-name {
-  height: 8%;
-  align-self: center;
-}
-.container-input-email-root-class-name1 {
-  height: 8%;
+  height: 10%;
   align-self: center;
 }
 .container-input-email-root-class-name2 {
-  height: 8%;
-  align-self: center;
-}
-.container-input-email-root-class-name3 {
-  height: 8%;
+  height: 10%;
   align-self: center;
 }
 .container-input-email-root-class-name4 {
@@ -61,4 +53,12 @@
 .container-input-email-root-class-name7 {
   height: 8%;
   align-self: center;
+}
+@media(max-width: 1366px) {
+  .container-input-email-root-class-name {
+    height: 46px;
+  }
+  .container-input-email-root-class-name2 {
+    height: 46px;
+  }
 }

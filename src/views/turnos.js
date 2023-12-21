@@ -44,7 +44,6 @@ const Turnos = (props) => {
               </div>
             </div>
           </div>
-          <div className="turnos-blur-container"></div>
         </div>
         <div className="turnos-second-body-container">
           <div className="turnos-container05">
@@ -74,26 +73,45 @@ const Turnos = (props) => {
             <form className="turnos-form">
               <div className="turnos-container09">
                 <ContainerInputEmail
-                  rootClassName="container-input-email-root-class-name"
                   EmailInput="Nombre Completo"
+                  rootClassName="container-input-email-root-class-name"
                   envelopeInputEmail_image="/nombrecompletoinput.svg"
                 ></ContainerInputEmail>
+                <div className="turnos-container-input-email input">
+                  <img
+                    alt="image"
+                    src="/calendaricon.svg"
+                    className="turnos-envelope-image-input"
+                  />
+                  <input
+                    type="date"
+                    placeholder="Fecha de turno"
+                    autoComplete="off"
+                    className="turnos-input-email"
+                  />
+                </div>
                 <ContainerInputEmail
-                  rootClassName="container-input-email-root-class-name1"
-                  EmailInput="Fecha de turno"
-                ></ContainerInputEmail>
-                <ContainerInputEmail
-                  rootClassName="container-input-email-root-class-name2"
                   EmailInput="Especialidad"
+                  rootClassName="container-input-email-root-class-name2"
                 ></ContainerInputEmail>
-                <ContainerInputEmail
-                  rootClassName="container-input-email-root-class-name3"
-                  EmailInput="Hospital"
-                ></ContainerInputEmail>
+                <div className="turnos-container-input-email1 input">
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    className="turnos-icon"
+                  >
+                    <path d="M219.429 749.714v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM219.429 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM365.714 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM219.429 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM658.286 749.714v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM512 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM365.714 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM658.286 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM512 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM658.286 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM512 950.857h219.429v-658.286h-146.286v18.286c0 30.286-24.571 54.857-54.857 54.857h-256c-30.286 0-54.857-24.571-54.857-54.857v-18.286h-146.286v658.286h219.429v-128c0-9.714 8.571-18.286 18.286-18.286h182.857c9.714 0 18.286 8.571 18.286 18.286v128zM512 274.286v-182.857c0-9.714-8.571-18.286-18.286-18.286h-36.571c-9.714 0-18.286 8.571-18.286 18.286v54.857h-73.143v-54.857c0-9.714-8.571-18.286-18.286-18.286h-36.571c-9.714 0-18.286 8.571-18.286 18.286v182.857c0 9.714 8.571 18.286 18.286 18.286h36.571c9.714 0 18.286-8.571 18.286-18.286v-54.857h73.143v54.857c0 9.714 8.571 18.286 18.286 18.286h36.571c9.714 0 18.286-8.571 18.286-18.286zM804.571 256v731.429c0 20-16.571 36.571-36.571 36.571h-731.429c-20 0-36.571-16.571-36.571-36.571v-731.429c0-20 16.571-36.571 36.571-36.571h182.857v-164.571c0-30.286 24.571-54.857 54.857-54.857h256c30.286 0 54.857 24.571 54.857 54.857v164.571h182.857c20 0 36.571 16.571 36.571 36.571z"></path>
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Hospital"
+                    autoComplete="off"
+                    className="turnos-input-email1"
+                  />
+                </div>
                 <button
-                  type="submit"
-                  name="submit"
                   id="sendTurno"
+                  name="submit"
+                  type="submit"
                   className="turnos-button button"
                 >
                   <span>

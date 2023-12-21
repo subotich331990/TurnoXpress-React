@@ -26,15 +26,15 @@ const ContainerInputEmail = (props) => {
 
 ContainerInputEmail.defaultProps = {
   envelopeInputEmail_image: '/envelopeicon.svg',
-  image_alt3: 'image',
   EmailInput: 'Correo eléctronico',
+  image_alt3: 'image',
   rootClassName: '',
 }
 
 ContainerInputEmail.propTypes = {
   envelopeInputEmail_image: PropTypes.string,
-  image_alt3: PropTypes.string,
   EmailInput: PropTypes.string,
+  image_alt3: PropTypes.string,
   rootClassName: PropTypes.string,
 }
 
