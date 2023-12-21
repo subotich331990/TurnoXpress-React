@@ -39,9 +39,9 @@ const HomePage = (props) => {
               </div>
               <div className="home-page-button-container">
                 <button
-                  type="button"
                   id="reserva-ahora"
                   name="reserva-ahora"
+                  type="button"
                   className="home-page-button button"
                 >
                   Reserva ahora

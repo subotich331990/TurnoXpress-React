@@ -2,6 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
+import ContainerInputEmail from './container-input-email'
 import './login.css'
 
 const Login = (props) => {
@@ -30,19 +31,7 @@ const Login = (props) => {
           <div className="login-container-form">
             <form className="login-login-form">
               <div id="inputMail" className="login-sub-container-mail">
-                <div className="login-container-input-email input">
-                  <img
-                    alt={props.image_alt3}
-                    src={props.envelopeInputEmail_image}
-                    className="login-envelope-image-input"
-                  />
-                  <input
-                    type="text"
-                    placeholder={props.EmailInput}
-                    autoComplete="off"
-                    className="login-input-email"
-                  />
-                </div>
+                <ContainerInputEmail></ContainerInputEmail>
               </div>
               <div className="login-sub-container-password">
                 <div className="login-container-input-password input">
@@ -125,14 +114,11 @@ const Login = (props) => {
 
 Login.defaultProps = {
   showPasswors_image: 'image',
-  envelopeInputEmail_image: '/envelopeicon.svg',
-  EmailInput: 'Correo eléctronico',
   ForgotPassword_input: 'https://example.com',
   image_src: '/d00910a2f58ebd9be8b4590c673efe1c-1500h.png',
   image_src4: '/lcokicon.svg',
   LoginButton: 'Iniciar Sesión',
   image_alt4: 'image',
-  image_alt3: 'image',
   image_alt1: 'image',
   image_src5: '/eyeicon.svg',
   link_text: 'https://example.com',
@@ -148,14 +134,11 @@ Login.defaultProps = {
 
 Login.propTypes = {
   showPasswors_image: PropTypes.string,
-  envelopeInputEmail_image: PropTypes.string,
-  EmailInput: PropTypes.string,
   ForgotPassword_input: PropTypes.string,
   image_src: PropTypes.string,
   image_src4: PropTypes.string,
   LoginButton: PropTypes.string,
   image_alt4: PropTypes.string,
-  image_alt3: PropTypes.string,
   image_alt1: PropTypes.string,
   image_src5: PropTypes.string,
   link_text: PropTypes.string,

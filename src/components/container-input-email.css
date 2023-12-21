@@ -1,0 +1,64 @@
+.container-input-email-container-input-email {
+  flex: 0 0 auto;
+  width: 70%;
+  height: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  transition: 0.3s;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: flex-start;
+}
+.container-input-email-container-input-email:hover {
+  box-shadow: 1px 1px 6px 1px #000000;
+}
+.container-input-email-envelope-image-input {
+  width: auto;
+  object-fit: cover;
+}
+.container-input-email-input-email {
+  width: 100%;
+  height: 31px;
+  transition: 0.3s;
+  font-family: "Poppins";
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius8);
+}
+.container-input-email-input-email:focus {
+  outline: none;
+}
+
+.container-input-email-root-class-name {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name1 {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name2 {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name3 {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name4 {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name5 {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name6 {
+  height: 8%;
+  align-self: center;
+}
+.container-input-email-root-class-name7 {
+  height: 8%;
+  align-self: center;
+}
