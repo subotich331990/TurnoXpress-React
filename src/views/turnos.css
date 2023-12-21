@@ -231,9 +231,9 @@
 .turnos-container-input-email1:hover {
   box-shadow: 1px 1px 6px 1px #000000;
 }
-.turnos-icon {
-  width: 24px;
-  height: 24px;
+.turnos-envelope-image-input1 {
+  width: auto;
+  object-fit: cover;
 }
 .turnos-input-email1 {
   width: 100%;
@@ -248,6 +248,71 @@
   outline: none;
 }
 
+.turnos-container-input-email2 {
+  flex: 0 0 auto;
+  width: 70%;
+  height: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  transition: 0.3s;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: flex-start;
+}
+.turnos-container-input-email2:hover {
+  box-shadow: 1px 1px 6px 1px #000000;
+}
+.turnos-envelope-image-input2 {
+  width: auto;
+  object-fit: cover;
+}
+.turnos-select {
+  width: 100%;
+  transition: 0.3s;
+  border-collapse: unset;
+}
+.turnos-select:focus {
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.turnos-input-email2 {
+  width: 100%;
+  height: 31px;
+  display: none;
+  transition: 0.3s;
+  font-family: "Poppins";
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius8);
+}
+.turnos-input-email2:focus {
+  outline: none;
+}
+
+.turnos-container-input-email3 {
+  flex: 0 0 auto;
+  width: 70%;
+  height: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  transition: 0.3s;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: flex-start;
+}
+.turnos-container-input-email3:hover {
+  box-shadow: 1px 1px 6px 1px #000000;
+}
+.turnos-icon {
+  fill: #6e6f77;
+  width: 24px;
+  height: 24px;
+}
+.turnos-select1 {
+  width: 100%;
+}
 .turnos-button {
   color: rgb(255, 255, 255);
   width: 70%;
@@ -409,7 +474,7 @@
     align-items: center;
     justify-content: center;
   }
-  .turnos-input-email {
+  .turnos-input-email1 {
     border-color: #ffffff;
   }
   .turnos-icon {
@@ -417,5 +482,37 @@
   }
   .turnos-button {
     height: 46px;
+  }
+  .turnos-third-body-container {
+    height: 100vh;
+  }
+  .turnos-container13 {
+    width: 100%;
+    height: 814px;
+    background-repeat: no-repeat;
+  }
+  .turnos-container14 {
+    height: 100%;
+  }
+  .turnos-ul {
+    height: 500px;
+    margin-top: 8%;
+  }
+  .turnos-text14 {
+    font-style: normal;
+    font-weight: 400;
+  }
+  .turnos-li1 {
+    margin-top: 6%;
+  }
+  .turnos-li2 {
+    margin-top: 6%;
+  }
+  .turnos-li3 {
+    margin-top: 6%;
+  }
+  .turnos-text17 {
+    font-style: normal;
+    font-weight: 400;
   }
 }

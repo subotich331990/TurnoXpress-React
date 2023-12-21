@@ -181,6 +181,9 @@
   align-self: center;
   font-family: "Poppins";
 }
+.footer-root-class-name {
+  height: 100vh;
+}
 @media(max-width: 1366px) {
   .footer-container {
     height: auto;

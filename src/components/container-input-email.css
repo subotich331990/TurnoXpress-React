@@ -30,14 +30,6 @@
   outline: none;
 }
 
-.container-input-email-root-class-name {
-  height: 10%;
-  align-self: center;
-}
-.container-input-email-root-class-name2 {
-  height: 10%;
-  align-self: center;
-}
 .container-input-email-root-class-name4 {
   height: 8%;
   align-self: center;
@@ -53,12 +45,4 @@
 .container-input-email-root-class-name7 {
   height: 8%;
   align-self: center;
-}
-@media(max-width: 1366px) {
-  .container-input-email-root-class-name {
-    height: 46px;
-  }
-  .container-input-email-root-class-name2 {
-    height: 46px;
-  }
 }

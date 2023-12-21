@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -22,18 +23,26 @@ const NavBar = (props) => {
                 id="especialidad-link"
                 className="nav-bar-especialidad-link"
               >
-                Especialista
+                Inicio
               </span>
             </div>
             <div className="nav-bar-container2">
-              <span id="turnos-link" className="nav-bar-turnos-link">
+              <Link
+                to="/turnos"
+                id="turnos-link"
+                className="nav-bar-turnos-link"
+              >
                 Turnos
-              </span>
+              </Link>
             </div>
             <div className="nav-bar-container3">
-              <span id="agenda-link" className="nav-bar-agenda-link">
+              <Link
+                to="/agenda"
+                id="agenda-link"
+                className="nav-bar-agenda-link"
+              >
                 Agenda
-              </span>
+              </Link>
             </div>
             <div className="nav-bar-container4">
               <span id="pago-link" className="nav-bar-pago-link">

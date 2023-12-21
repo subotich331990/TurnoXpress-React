@@ -236,6 +236,9 @@
 .nav-bar-root-class-name2 {
   height: 100%;
 }
+.nav-bar-root-class-name3 {
+  height: 100vh;
+}
 @media(max-width: 1366px) {
   .nav-bar-navbar-interactive {
     height: 83px;
