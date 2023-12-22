@@ -82,8 +82,8 @@ const Agenda = () => {
                       <td >{turnos.speciality}</td>
                       <td>{turnos.medic}</td>
                       <td>{turnos.date}</td>
-                      <td>{turnos.time}</td>
                       <td>{turnos.status}</td>
+                      <td>{turnos.hospital}</td>
                     </tr>
                   ))
                 }
