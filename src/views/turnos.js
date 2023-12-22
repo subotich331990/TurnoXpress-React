@@ -102,7 +102,7 @@ const Turnos = (props) => {
                   <img
                     alt="especialidad"
                     src="/stethoscope_fill1_wght400_grad0_opsz24.svg"
-                    className="turnos-envelope-image-input2"
+                    className="turnos-stethoscope-image-input .turnos-icon"
                   />
                   <select
                     autoComplete="off"
@@ -111,7 +111,7 @@ const Turnos = (props) => {
                     required
                     className="turnos-select"
                   >
-                    <option value="Option_1">Especialidad</option>
+                    <option value="Option_1" selected>Especialidad</option>
                     <option value="Option_2">Traumatología</option>
                     <option value="Option_3">Medicina General</option>
                     <option value="Option_4">Nutrición</option>
@@ -124,19 +124,18 @@ const Turnos = (props) => {
                     className="turnos-input-email2"
                   />
                 </div>
-                <div className="turnos-container-input-email3 input">
-                  <svg
-                    viewBox="0 0 804.5714285714286 1024"
-                    className="turnos-icon"
-                  >
-                    <path d="M219.429 749.714v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM219.429 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM365.714 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM219.429 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM658.286 749.714v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM512 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM365.714 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM658.286 603.429v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM512 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM658.286 457.143v36.571c0 9.714-8.571 18.286-18.286 18.286h-36.571c-9.714 0-18.286-8.571-18.286-18.286v-36.571c0-9.714 8.571-18.286 18.286-18.286h36.571c9.714 0 18.286 8.571 18.286 18.286zM512 950.857h219.429v-658.286h-146.286v18.286c0 30.286-24.571 54.857-54.857 54.857h-256c-30.286 0-54.857-24.571-54.857-54.857v-18.286h-146.286v658.286h219.429v-128c0-9.714 8.571-18.286 18.286-18.286h182.857c9.714 0 18.286 8.571 18.286 18.286v128zM512 274.286v-182.857c0-9.714-8.571-18.286-18.286-18.286h-36.571c-9.714 0-18.286 8.571-18.286 18.286v54.857h-73.143v-54.857c0-9.714-8.571-18.286-18.286-18.286h-36.571c-9.714 0-18.286 8.571-18.286 18.286v182.857c0 9.714 8.571 18.286 18.286 18.286h36.571c9.714 0 18.286-8.571 18.286-18.286v-54.857h73.143v54.857c0 9.714 8.571 18.286 18.286 18.286h36.571c9.714 0 18.286-8.571 18.286-18.286zM804.571 256v731.429c0 20-16.571 36.571-36.571 36.571h-731.429c-20 0-36.571-16.571-36.571-36.571v-731.429c0-20 16.571-36.571 36.571-36.571h182.857v-164.571c0-30.286 24.571-54.857 54.857-54.857h256c30.286 0 54.857 24.571 54.857 54.857v164.571h182.857c20 0 36.571 16.571 36.571 36.571z"></path>
-                  </svg>
+                <div className="turnos-container-input-hospital input">
+                  <img
+                    alt="hospital"
+                    src="/hospital-grey-icon.svg"
+                    className="svg-image turnos-stethoscope-image-input .turnos-icon"
+                  />
                   <select
                     id="hospital-select"
                     required
                     className="turnos-select1"
                   >
-                    <option value="HospitalOption">Hospital</option>
+                    <option value="HospitalOption" selected>Hospital</option>
                     <option value="Option_2">
                       Karolinska University Hospital
                     </option>
@@ -174,8 +173,7 @@ const Turnos = (props) => {
                 <div className="turnos-container14">
                   <ul className="turnos-ul list">
                     <li className="turnos-li list-item">
-                      <span className="turnos-text14">
-                        {' '}
+                      <span className="turnos-text15">
                         Evita largas esperas y accede a servicios médicos en el
                         momento que más te convenga.
                       </span>
@@ -186,12 +184,12 @@ const Turnos = (props) => {
                       </span>
                     </li>
                     <li className="turnos-li2 list-item">
-                      <span className="turnos-text16">
+                      <span className="turnos-text15">
                         Mantente informado en todo momento
                       </span>
                     </li>
                     <li className="turnos-li3 list-item">
-                      <span className="turnos-text17">
+                      <span className="turnos-text15">
                         Proceso de pago simplificado y seguro
                       </span>
                     </li>
