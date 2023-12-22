@@ -4,7 +4,7 @@ import ContainerInputEmail from './container-input-email'
 
 import './login.css'
 
-const URL_LOGIN = 
+const URL_LOGIN = "";
 
 const Login = (props) => {
 
@@ -61,8 +61,7 @@ const Login = (props) => {
           <div className="login-container-form">
             <form className="login-login-form" onSubmit={enviarDatos}>
               <div id="inputMail" className="login-sub-container-mail">
-                <ContainerInputEmail value={datosLogin.password}
-                  onChange={manejarCambio}></ContainerInputEmail>
+                <ContainerInputEmail ></ContainerInputEmail>
               </div>
               <div className="login-sub-container-password">
                 <div className="login-container-input-password input">
