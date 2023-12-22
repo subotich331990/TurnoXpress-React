@@ -23,7 +23,9 @@ const NavBar = (props) => {
                 id="especialidad-link"
                 className="nav-bar-especialidad-link"
               >
-                Inicio
+                <Link to="/home-page">
+                  Inicio
+                </Link>
               </span>
             </div>
             <div className="nav-bar-container2">
@@ -45,7 +47,7 @@ const NavBar = (props) => {
               </Link>
             </div>
             <div className="nav-bar-container4">
-              <span id="pago-link" className="nav-bar-pago-link">
+              <span id="pago-link" className="nav-bar-pago-link visually-hidden" >
                 Pagos
               </span>
             </div>

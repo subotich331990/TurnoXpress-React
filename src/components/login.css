@@ -254,6 +254,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
   padding-bottom: 2%;
+  
 }
 .login-google-button:hover {
   box-shadow: 5px 5px 10px 0px #000000;
@@ -265,6 +266,8 @@
 .login-image-google-logo {
   width: auto;
   object-fit: cover;
+  margin-left: 47%;
+  
 }
 .login-container-register {
   flex: 0 0 auto;

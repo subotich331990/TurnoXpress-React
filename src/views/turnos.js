@@ -82,6 +82,7 @@ const Turnos = (props) => {
                     placeholder="Nombre Completo"
                     autoComplete="off"
                     className="turnos-input-email"
+                    name="nombre-completo"
                   />
                 </div>
                 <div className="turnos-container-input-email1 input">
@@ -94,24 +95,26 @@ const Turnos = (props) => {
                     type="date"
                     placeholder="Fecha de turno"
                     autoComplete="off"
-                    required
+                    name='fecha-turno'
+                    min="2024-01-01"
+                    max="2024-12-31"
                     className="turnos-input-email1"
                   />
                 </div>
                 <div className="turnos-container-input-email2 input">
                   <img
                     alt="especialidad"
-                    src="/stethoscope_fill1_wght400_grad0_opsz24.svg"
-                    className="turnos-stethoscope-image-input .turnos-icon"
+                    src="/medical-history-doctor-svgrepo-com.svg"
+                    className="svg-image turnos-stethoscope-image-input .turnos-icon"
                   />
                   <select
                     autoComplete="off"
                     name="especialidadName"
-                    autoFocus
+                    
                     required
                     className="turnos-select"
                   >
-                    <option value="Option_1" selected>Especialidad</option>
+                    <option selected="true" disabled="disabled">Especialidades</option>
                     <option value="Option_2">Traumatología</option>
                     <option value="Option_3">Medicina General</option>
                     <option value="Option_4">Nutrición</option>
@@ -135,7 +138,7 @@ const Turnos = (props) => {
                     required
                     className="turnos-select1"
                   >
-                    <option value="HospitalOption" selected>Hospital</option>
+                    <option selected="true" disabled="disabled">Hospital</option>
                     <option value="Option_2">
                       Karolinska University Hospital
                     </option>

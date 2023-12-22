@@ -26,7 +26,7 @@
 .home-page-body-container {
   flex: 0 0 auto;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   align-items: flex-start;
   background-size: cover;
   background-image: url("/doctorabackground-1500h.png");
@@ -113,7 +113,7 @@
     height: 80px;
   }
   .home-page-body-container {
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: top right;
   }
