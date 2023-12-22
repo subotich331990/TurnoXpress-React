@@ -32,7 +32,7 @@
 .agenda-container1 {
   flex: 0 0 auto;
   width: 90%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
+
   height: 90vh;
   display: flex;
   align-self: center;
@@ -45,4 +45,21 @@
   height: 100px;
   display: flex;
   align-items: flex-start;
+}
+
+
+.caption-top-color{
+color: #2A60FF !important;
+}
+
+.agenda-text {
+  color: #2A60FF;
+  font-size: 16px;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: 0px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 158%;
+  letter-spacing: 0.58px;
 }
