@@ -31,8 +31,8 @@ const Turnos = () => {
     try {
       // Cambia la URL con la dirección de tu API
       const response = await axios.post(URL_BASE_API_TURNOS, datos);
-
-      alert('Respuesta del servidor:', response.data);
+      response
+      alert('Turno guardado con exito');
     } catch (error) {
       console.error('Error al enviar la solicitud POST:', error);
     }
