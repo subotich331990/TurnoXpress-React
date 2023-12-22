@@ -14,15 +14,35 @@ const Agenda = () => {
 
   useEffect(() => {
 
-    TurnosGet.getAllTurnos()
-      .then(response => {
-        setTurnos(response.data);
-        console.log(response.data);
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  }, []);
+    const [turnos, setTurnos] = useState([]);
+    const [cargando, setCargando] = useState(true); // Nuevo estado para indicar si está cargando
+
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await TurnosGet.getAllTurnos();
+          setTurnos(response.data);
+          setCargando(false); // Establecer el estado de carga a falso cuando los datos se han cargado
+          console.log(response.data);
+        } catch (error) {
+          console.log(error);
+          setCargando(false); // Manejar errores también estableciendo el estado de carga a falso
+        }
+      };
+
+      fetchData();
+    }, []);
+
+
+  //   TurnosGet.getAllTurnos()
+  //     .then(response => {
+  //       setTurnos(response.data);
+  //       console.log(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.log(error);
+  //     })
+  // }, []);
 
   return (
     <div className="agenda-container">
@@ -35,6 +55,9 @@ const Agenda = () => {
           <NavBar rootClassName="nav-bar-root-class-name3"></NavBar>
         </div>
         <div className="agenda-body-container">
+          {cargando ? (
+            <p>Cargando...</p>
+          ) : (
           <div className="agenda-container1 ">
 
             <table className="table caption-top agenda-text" >
@@ -62,7 +85,8 @@ const Agenda = () => {
                 }
               </tbody>
             </table>
-          </div>
+            </div>
+          )}
         </div>
         <div className="agenda-footer-container">
           <Footer rootClassName="footer-root-class-name"></Footer>
