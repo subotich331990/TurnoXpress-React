@@ -79,7 +79,7 @@ const Agenda = () => {
                 {
                   turnos.map((turnos) => (
                     <tr key = {turnos.id_app}>
-                      <td >{turnos.patient}</td>
+                      <td >{turnos.speciality}</td>
                       <td>{turnos.medic}</td>
                       <td>{turnos.date}</td>
                       <td>{turnos.time}</td>
