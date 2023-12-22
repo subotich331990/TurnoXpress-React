@@ -21,7 +21,7 @@ const NavBar = (props) => {
             <div className="nav-bar-container1">
               <span
                 id="especialidad-link"
-                className="nav-bar-especialidad-link"
+                className="nav-bar-agenda-link"
               >
                 <Link to="/home-page">
                   Inicio
@@ -32,7 +32,7 @@ const NavBar = (props) => {
               <Link
                 to="/turnos"
                 id="turnos-link"
-                className="nav-bar-turnos-link"
+                className="nav-bar-agenda-link"
               >
                 Turnos
               </Link>

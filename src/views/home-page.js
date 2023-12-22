@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
 import NavBar from '../components/nav-bar'
 import Footer from '../components/footer'
@@ -38,14 +39,21 @@ const HomePage = (props) => {
                 </span>
               </div>
               <div className="home-page-button-container">
+                <Link
+                  to="/turnos"
+                  id="turnos-link"
+                  className="nav-bar-turnos-link"
+                >
                 <button
                   id="reserva-ahora"
                   name="reserva-ahora"
                   type="button"
                   className="home-page-button button"
+
                 >
                   Reserva ahora
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
