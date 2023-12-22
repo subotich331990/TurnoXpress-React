@@ -1,12 +1,52 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import axios from 'axios'
 import { Helmet } from 'react-helmet'
-
 import NavBar from '../components/nav-bar'
 import Footer from '../components/footer'
+import { obtenerHoraYMinuto } from '../services/getHora';
+import { obtenerMedico } from '../services/medicList';
 import './turnos.css'
 
-const Turnos = (props) => {
+const URL_BASE_API_TURNOS = "https://turnoxpress-api-v3.onrender.com/api/v3/appointment"
+
+const Turnos = () => {
+
+  const [datos, setDatos] = useState({
+    // Inicializa tus datos aquí
+    // Por ejemplo:
+    hospital: '',
+    medic: obtenerMedico(),
+    speciality: '',
+    date: '',
+    time: obtenerHoraYMinuto(),
+    status:'Pendiente'
+    
+    // ...
+  });
+
+  const enviarDatos = async (event) => {
+    
+    event.preventDefault(); 
+
+    try {
+      // Cambia la URL con la dirección de tu API
+      const response = await axios.post(URL_BASE_API_TURNOS, datos);
+
+      alert('Respuesta del servidor:', response.data);
+    } catch (error) {
+      console.error('Error al enviar la solicitud POST:', error);
+    }
+  };
+
+  const manejarCambio = (event) => {
+    // Actualiza los datos del estado cuando el usuario cambia un campo
+    setDatos({
+      ...datos,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+
   return (
     <div className="turnos-container">
       <Helmet>
@@ -69,7 +109,7 @@ const Turnos = (props) => {
             </div>
           </div>
           <div className="turnos-form-container">
-            <form className="turnos-form">
+            <form className="turnos-form" onSubmit={enviarDatos}>
               <div className="turnos-container09">
                 <div className="turnos-container-input-email input">
                   <img
@@ -82,7 +122,7 @@ const Turnos = (props) => {
                     placeholder="Nombre Completo"
                     autoComplete="off"
                     className="turnos-input-email"
-                    name="nombre-completo"
+                    name="nombreCompleto"
                   />
                 </div>
                 <div className="turnos-container-input-email1 input">
@@ -95,10 +135,10 @@ const Turnos = (props) => {
                     type="date"
                     placeholder="Fecha de turno"
                     autoComplete="off"
-                    name='fecha-turno'
+                    name='date'
                     min="2024-01-01"
-                    max="2024-12-31"
                     className="turnos-input-email1"
+                    value={datos.date} onChange={manejarCambio}
                   />
                 </div>
                 <div className="turnos-container-input-email2 input">
@@ -108,13 +148,14 @@ const Turnos = (props) => {
                     className="svg-image turnos-stethoscope-image-input .turnos-icon"
                   />
                   <select
-                    autoComplete="off"
-                    name="especialidadName"
-                    
                     required
+                    autoComplete="off"
                     className="turnos-select"
+                    name="speciality"
+                    value={datos.speciality} onChange={manejarCambio}
+
                   >
-                    <option selected="true" disabled="disabled">Especialidades</option>
+                    <option disabled defaultValue>Especialidades</option>
                     <option value="Option_2">Traumatología</option>
                     <option value="Option_3">Medicina General</option>
                     <option value="Option_4">Nutrición</option>
@@ -137,17 +178,19 @@ const Turnos = (props) => {
                     id="hospital-select"
                     required
                     className="turnos-select1"
+                    name="hospital"
+                    value={datos.hospital} onChange={manejarCambio}
                   >
-                    <option selected="true" disabled="disabled">Hospital</option>
-                    <option value="Option_2">
+                    <option disabled defaultValue>Hospital</option>
+                    <option value="Karolinska University Hospital">
                       Karolinska University Hospital
                     </option>
-                    <option value="Option_3">Cleveland Clinic</option>
-                    <option value="Option_4">
+                    <option value="Cleveland Clinic">Cleveland Clinic</option>
+                    <option value="Hospital General de Agudos Dr. E. Tornú">
                       Hospital General de Agudos Dr. E. Tornú
                     </option>
-                    <option value="Option_5">Hospital de Niños</option>
-                    <option value="Option_6">Hospital Santa Lucía</option>
+                    <option value="Hospital de Niños">Hospital de Niños</option>
+                    <option value="Hospital Santa Lucía">Hospital Santa Lucía</option>
                   </select>
                 </div>
                 <button
@@ -158,7 +201,6 @@ const Turnos = (props) => {
                 >
                   <span>
                     <span>Enviar</span>
-                    <br></br>
                   </span>
                 </button>
               </div>
