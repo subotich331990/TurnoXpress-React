@@ -9,6 +9,7 @@ const TurnosGet = new TurnosServices()
 import NavBar from '../components/nav-bar'
 import Footer from '../components/footer'
 import './agenda.css'
+import Skeleton from 'react-loading-skeleton';
 
 const Agenda = () => {
 
@@ -59,7 +60,7 @@ const Agenda = () => {
         <div className="card-body agenda-body-container">
           {cargando ? (
             
-            <GridLoader color = "hsla(223, 100%, 46%, 1)"></GridLoader>
+            loader()
             
           ) : (
           <div className="agenda-container1 ">
