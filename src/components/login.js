@@ -1,11 +1,41 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-
 import ContainerInputEmail from './container-input-email'
+
 import './login.css'
 
+const URL_LOGIN = 
+
 const Login = (props) => {
+
+  const [datosLogin, setDatosLogin] = useState({
+    email: '',
+    password: ''
+  })
+
+  const enviarDatos = async (event) => {
+
+    event.preventDefault();
+
+    try {
+      // Cambia la URL con la dirección de tu API
+      const response = await axios.post(URL_BASE_API_TURNOS, datos);
+      response
+      alert('Turno guardado con exito');
+    } catch (error) {
+      console.error('Error al enviar la solicitud POST:', error);
+    }
+  };
+
+  const manejarCambio = (event) => {
+    // Actualiza los datos del estado cuando el usuario cambia un campo
+    setDatos({
+      ...datos,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+
   return (
     <main id="main-container" className="login-container">
       <div className="login-container-col-left">
@@ -29,9 +59,10 @@ const Login = (props) => {
         </div>
         <div className="login-container-col-main-left">
           <div className="login-container-form">
-            <form className="login-login-form">
+            <form className="login-login-form" onSubmit={enviarDatos}>
               <div id="inputMail" className="login-sub-container-mail">
-                <ContainerInputEmail></ContainerInputEmail>
+                <ContainerInputEmail value={datosLogin.password}
+                  onChange={manejarCambio}></ContainerInputEmail>
               </div>
               <div className="login-sub-container-password">
                 <div className="login-container-input-password input">
@@ -45,6 +76,8 @@ const Login = (props) => {
                     outline="none"
                     placeholder="Contraseña"
                     className="login-input-password input"
+                    value={datosLogin.password}
+                    onChange={manejarCambio}
                   />
                   <img
                     id="showPasswordBtn"
