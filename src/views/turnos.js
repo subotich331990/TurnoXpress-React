@@ -156,10 +156,10 @@ const Turnos = () => {
 
                   >
                     <option disabled defaultValue>Especialidades</option>
-                    <option value="Option_2">Traumatología</option>
-                    <option value="Option_3">Medicina General</option>
-                    <option value="Option_4">Nutrición</option>
-                    <option value="Option_5">Otorrinolaringología</option>
+                    <option value="Traumatología">Traumatología</option>
+                    <option value="Medicina General">Medicina General</option>
+                    <option value="Nutrición">Nutrición</option>
+                    <option value="OOtorrinolaringología">Otorrinolaringología</option>
                   </select>
                   <input
                     type="text"
