@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, CSSProperties} from 'react'
 
 import { Helmet } from 'react-helmet'
 import { TurnosServices } from '../services/turnoService';
+import loader from '../components/skeleton';
+import GridLoader from "react-spinners/CircleLoader"
 const TurnosGet = new TurnosServices()
 
 import NavBar from '../components/nav-bar'
@@ -10,9 +12,9 @@ import './agenda.css'
 
 const Agenda = () => {
 
-  const [turnos, setTurnos] = useState([]);
+  // const [turnos, setTurnos] = useState([]);
 
-  useEffect(() => {
+  // useEffect(() => {
 
     const [turnos, setTurnos] = useState([]);
     const [cargando, setCargando] = useState(true); // Nuevo estado para indicar si está cargando
@@ -50,13 +52,15 @@ const Agenda = () => {
         <title>Agenda - TurnoXpress</title>
         <meta property="og:title" content="Agenda - TurnoXpress" />
       </Helmet>
-      <div className="agenda-main-container">
+      <div className="card agenda-main-container">
         <div className="agenda-header-container">
           <NavBar rootClassName="nav-bar-root-class-name3"></NavBar>
         </div>
-        <div className="agenda-body-container">
+        <div className="card-body agenda-body-container">
           {cargando ? (
-            <p>Cargando...</p>
+            
+            <GridLoader color = "hsla(223, 100%, 46%, 1)"></GridLoader>
+            
           ) : (
           <div className="agenda-container1 ">
 
