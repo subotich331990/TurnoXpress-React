@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import axios from 'axios'
 import { Helmet } from 'react-helmet'
-import NavBar from '../components/nav-bar'
-import Footer from '../components/footer'
 import { obtenerHoraYMinuto } from '../services/getHora';
 import { obtenerMedico } from '../services/medicList';
+import NavBar from '../components/nav-bar'
+import Footer from '../components/footer'
+import axios from 'axios'
 import './turnos.css'
 
 const URL_BASE_API_TURNOS = "https://turnoxpress-api-v3.onrender.com/api/v3/appointment"
@@ -159,7 +159,7 @@ const Turnos = () => {
                     <option value="Traumatología">Traumatología</option>
                     <option value="Medicina General">Medicina General</option>
                     <option value="Nutrición">Nutrición</option>
-                    <option value="OOtorrinolaringología">Otorrinolaringología</option>
+                    <option value="Otorrinolaringología">Otorrinolaringología</option>
                   </select>
                   <input
                     type="text"
